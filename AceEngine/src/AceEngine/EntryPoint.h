@@ -6,8 +6,10 @@ extern AceEngine::Application* AceEngine::CreateApplication();
 
 void main()
 {
+	AceEngine::Logger::Init();
+	ACE_GAME_ERROR("xxxx");
+	ACE_CORE_TRACE("xxxx");
 
-	printf("xxxxxxxxxxx");
 	auto* game = AceEngine::CreateApplication();
 	game->Run();
 	delete game;
