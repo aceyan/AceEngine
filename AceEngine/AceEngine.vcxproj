@@ -57,7 +57,9 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>ACE_ENGINE_BUILD_DLL;ACE_ENGINE_PLATFORM_WINDOWS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)AceEngine\ThirdParty\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)AceEngine\ThirdParty\spdlog\include;$(SolutionDir)AceEngine\src;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>Acepch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -74,8 +76,10 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)AceEngine\ThirdParty\spdlog\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)AceEngine\ThirdParty\spdlog\include;$(SolutionDir)AceEngine\src;</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>ACE_ENGINE_BUILD_DLL;ACE_ENGINE_PLATFORM_WINDOWS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>Acepch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -89,10 +93,12 @@
     <ClInclude Include="src\AceEngine\Core.h" />
     <ClInclude Include="src\AceEngine\Application.h" />
     <ClInclude Include="src\AceEngine\EntryPoint.h" />
+    <ClInclude Include="src\Acepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AceEngine\Logger.cpp" />
     <ClCompile Include="src\AceEngine\Application.cpp" />
+    <ClCompile Include="src\Acepch.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

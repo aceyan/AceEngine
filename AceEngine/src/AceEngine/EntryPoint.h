@@ -8,7 +8,7 @@ void main()
 {
 	AceEngine::Logger::Init();
 	ACE_GAME_ERROR("xxxx");
-	ACE_CORE_TRACE("xxxx");
+	ACE_CORE_TRACE("YYYY");
 
 	auto* game = AceEngine::CreateApplication();
 	game->Run();
