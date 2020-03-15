@@ -2,7 +2,8 @@
 
 #include <memory>
 #include <iostream> 
-#include <glfw3.h> 
+
+#include "AceEngine/Logger.h"
 
 #ifdef ACE_ENGINE_PLATFORM_WINDOWS
 	#include <Windows.h>

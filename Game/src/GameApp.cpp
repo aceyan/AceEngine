@@ -5,7 +5,6 @@ class GameApp : public AceEngine::Application
 public:
 	GameApp()
 	{
-
 	}
 	~GameApp()
 	{

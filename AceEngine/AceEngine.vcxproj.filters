@@ -33,6 +33,12 @@
     <ClInclude Include="src\Acepch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platforms\WindowsWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AceEngine\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AceEngine\Application.cpp">
@@ -42,6 +48,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Acepch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platforms\WindowsWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AceEngine\Window.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

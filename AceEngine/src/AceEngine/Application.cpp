@@ -1,10 +1,13 @@
 #include "Acepch.h"
 #include "Application.h"
+#include <glfw3.h>
 
 namespace AceEngine
 {
 	Application::Application()
 	{
+		//_window = std::unique_ptr<Window>(Window::Create());//?
+		_window = Window::Create();
 	}
 
 	Application::~Application()
@@ -15,7 +18,9 @@ namespace AceEngine
 	{
 		while (true)
 		{
-
+			glClearColor(1, 0, 0, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			_window->OnUpdate();
 		}
 	}
 }
