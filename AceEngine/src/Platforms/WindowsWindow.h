@@ -1,8 +1,7 @@
 #pragma once
-#include <glfw3.h> 
 #include "AceEngine/Window.h"
 
-
+struct  GLFWwindow;
 namespace AceEngine
 {
 	class WindowsWindow : public Window

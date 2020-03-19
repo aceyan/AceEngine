@@ -1,7 +1,9 @@
 #include "Acepch.h"
 #include "WindowsWindow.h"
 #include <iostream> 
+#include <glad/glad.h>
 #include <glfw3.h> 
+
 namespace AceEngine
 {
 	WindowsWindow::WindowsWindow(const WindowProperties & props) : Window(props)
@@ -48,6 +50,8 @@ namespace AceEngine
 			return;
 		}
 		glfwMakeContextCurrent(_window);
+		int result = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		ACE_CORE_ASSERT(result, "Glad init fail!");
 		SetVSync(true);
 	}
 	void WindowsWindow::ShutDown()
