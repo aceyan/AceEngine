@@ -16,5 +16,5 @@ namespace AceEngine
 		std::unique_ptr<Window> _window;
 	};
 
-	Application* CreateApplication();
+	Application* CreateApplication();//should be implemented by GameApp
 }
