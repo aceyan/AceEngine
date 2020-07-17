@@ -1,6 +1,8 @@
 [submodule "AceEngine/ThirdParty/pdlog"]
 	path = AceEngine/ThirdParty/spdlog
 	url = https://github.com/gabime/spdlog
+	branch = v1.x
 [submodule "AceEngine/ThirdParty/GLFW"]
 	path = AceEngine/ThirdParty/GLFW
 	url = https://github.com/aceyan/glfw
+	branch = master
