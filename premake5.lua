@@ -17,13 +17,14 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 
 include "AceEngine/ThirdParty/glad"
+include "AceEngine/ThirdParty/GLFW"
 
 project "AceEngine"
 	location "AceEngine"
 	kind "SharedLib"
 	language "C++"
 	cppdialect "C++17"
-	staticruntime "off"
+	staticruntime "On"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -41,20 +42,16 @@ project "AceEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/ThirdParty/glad/include",
-		"%{prj.name}/ThirdParty/GLFW/include",
+		"%{prj.name}/ThirdParty/GLFW/include/GLFW",
 		"%{prj.name}/ThirdParty/spdlog/include"
-	}
-
-	libdirs 
-	{
-		"%{prj.name}/ThirdParty/GLFW/lib-vc2017"
 	}
 
 	links
 	{
-		"glfw3.lib",
 		"opengl32.lib",
-		"Glad"
+		"Glad",
+		"GLFW"
+		
 	}
 
 	defines

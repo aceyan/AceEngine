@@ -1,3 +1,6 @@
 [submodule "AceEngine/ThirdParty/pdlog"]
 	path = AceEngine/ThirdParty/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "AceEngine/ThirdParty/GLFW"]
+	path = AceEngine/ThirdParty/GLFW
+	url = https://github.com/aceyan/glfw
