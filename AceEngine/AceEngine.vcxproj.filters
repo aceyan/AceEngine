@@ -1,60 +1,48 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="AceEngine">
+      <UniqueIdentifier>{244AD9EA-90B4-8D61-D9F2-3E07459C6BB6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{DDACA145-4917-56BC-9255-0762FEFE3311}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\AceEngine\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="src\AceEngine.h" />
     <ClInclude Include="src\AceEngine\Application.h">
-      <Filter>Header Files</Filter>
+      <Filter>AceEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\AceEngine.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\AceEngine\Core.h">
+      <Filter>AceEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\AceEngine\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>AceEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\AceEngine\Logger.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Acepch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Platforms\WindowsWindow.h">
-      <Filter>Header Files</Filter>
+      <Filter>AceEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\AceEngine\Window.h">
-      <Filter>Header Files</Filter>
+      <Filter>AceEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Acepch.h" />
+    <ClInclude Include="src\Platforms\WindowsWindow.h">
+      <Filter>Platforms</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AceEngine\Application.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AceEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\AceEngine\Logger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Acepch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Platforms\WindowsWindow.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AceEngine</Filter>
     </ClCompile>
     <ClCompile Include="src\AceEngine\Window.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>AceEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Acepch.cpp" />
+    <ClCompile Include="src\Platforms\WindowsWindow.cpp">
+      <Filter>Platforms</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
